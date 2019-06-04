@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+    scrollbar-width: none;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+}
+
+.homepage {
+    height: 100vh;
+    width: 100%;
+    background-color: lightskyblue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.profilePicture {
+    height: 20rem;
+    width: 20rem;
+    margin-top: 4rem;
+    border: 1rem solid lightsalmon;
+    border-radius: 50%;
+    grid-template: "icon";
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.75);
+}
+
+.title {
+    font-size: 6rem;
+    grid-template: "title";
+    filter: drop-shadow(.5rem .5rem .5rem pink);
+}
+
+.description {
+    text-align: center;
+    background-color: lightsalmon;
+    box-shadow: .5rem .5rem 1rem black;
+}
+
+.skills {
+    height: 100vh;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.projects {
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+}
+
