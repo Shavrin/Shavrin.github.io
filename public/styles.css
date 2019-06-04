@@ -47,8 +47,35 @@ body {
     height: 100vh;
     width: 100%;
     background-color: lightcoral;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
+.skill {
+    height: 4rem;
+    width: 50%;
+    background-color: black;
+    border-radius: 5rem;
+    border: 1rem solid black;
+    box-shadow: .5rem .5rem 1rem black;
+}
+
+.skill.animate > .skillBar{
+    width: 100%;
+}
+.skillBar {
+    height: 100%;
+    width:  10%;
+    background-color: greenyellow;
+    transition: width 1s;
+    border-radius: 5rem;
+}
+
+.skillTitle {
+    
+}
 .projects {
     height: 100vh;
     width: 100%;
