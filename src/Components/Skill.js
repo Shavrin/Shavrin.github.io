@@ -32,14 +32,12 @@ class Skill extends React.Component {
                 this.setState({isInViewport: true, eventAttached: false});
                 window.removeEventListener('scroll', this.checkIfInViewport, false);
             }
-        console.log(1);
     };
 
-    render(){
-        const classes = "skill" + (this.state.isInViewport ? " animate" : "");
+    render(){       
         return (
-            <div className={classes} ref="ref">
-                <div className="skillBar"></div>
+            <div className="skill" ref="ref">
+                <div className="skillBar" style={{width: this.state.isInViewport ? this.props.progress : "0%"}}></div>
             </div>);
     };
 };
