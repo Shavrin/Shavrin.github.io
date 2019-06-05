@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    font-size: 10px;
     scrollbar-width: none;
 
 }
@@ -29,6 +29,7 @@ body {
     border-radius: 50%;
     grid-template: "icon";
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.75);
+    
 }
 
 .title {
@@ -73,12 +74,43 @@ body {
     border-radius: 5rem;
 }
 
-.skillTitle {
-    
-}
 .projects {
     height: 100vh;
     width: 100%;
     background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5rem;
+    justify-items: center;
+    justify-content: space-around;
 }
 
+@media(max-width: 1000px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.project {
+    margin-top: 1rem;
+    width: 25rem;
+    height: 25rem;
+    background-color: pink;
+    border-radius: 50%;
+    border: 1rem solid lightsalmon;
+    box-shadow: 1rem 1rem .1rem black;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+}
+
+.project:hover {
+    box-shadow: 1rem 1rem 3rem salmon;
+}
+
+
+footer {
+    height: 5rem;
+    width: 100%;
+    background-color: darkcyan;
+}
