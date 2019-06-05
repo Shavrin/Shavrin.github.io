@@ -42,6 +42,7 @@ body {
     text-align: center;
     background-color: lightsalmon;
     box-shadow: .5rem .5rem 1rem black;
+    border-radius: 2rem;
 }
 
 .skills {
@@ -126,8 +127,24 @@ body {
 }
 
 
-footer {
+.contact {
+    background-color: royalblue;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact > p {
+    background-color: lightsalmon;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.contactLogo {
     height: 5rem;
-    width: 100%;
-    background-color: darkcyan;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+.contactLogo:hover {
+    filter: brightness(50%) sepia(1) saturate(10000%) hue-rotate(180deg) drop-shadow(0 0 1rem white);
 }
