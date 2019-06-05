@@ -1,7 +1,13 @@
 import React from 'react';
+import '../styles/header.scss';
 
 const Header = () => {
-    return <h1></h1>;
+    return (
+        <header>
+            <h1>Kacper Olek</h1>
+            <p className="aboutMe">Web Developer</p>
+            <div className="line"></div>
+        </header>);
 };
 
 export default Header;

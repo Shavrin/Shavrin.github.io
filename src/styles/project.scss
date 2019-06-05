@@ -1,0 +1,53 @@
+.project {
+    width: 35rem;
+    background-image: linear-gradient(lightblue, white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    border: 2px solid black;
+    overflow: hidden;
+
+    h2 {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .description {
+        margin: 1rem;
+    }
+
+    >img {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        object-fit: cover;
+        height: 10rem;
+        filter: grayscale(50%);
+        transition: all 0.3s;
+        border-bottom: 2px solid black;
+    }
+
+    &:hover>img {
+        filter: grayscale(0);
+        transform: scale(1.05);
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 2rem;
+
+        img {
+            height: 3rem;
+            border-bottom: 2px solid black;
+            transition: all 0.3s;
+
+            &:hover {
+                border-color: red;
+                filter: drop-shadow(1px 1px 1px red);
+            }
+        }
+    }
+}
