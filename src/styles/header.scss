@@ -8,15 +8,53 @@ header {
         margin: 1rem 0 0 0;
     }
 
+    .aboutMe {
+        border-bottom: 2px solid gray;
+
+        &:hover {
+            filter: drop-shadow(0 0 5px gray);
+            cursor: pointer;
+        }
+    }
+
     .line {
         height: 2px;
         width: 0%;
         background-color: black;
-        margin-bottom: 1rem;
         transition: width 1s;
 
         &.animate {
-            width: 80%;
+            width: 85%;
         }
+    }
+
+    .aboutMeSection {
+        visibility: hidden;
+        height: 0;
+        width: calc(85% - 4px);
+        border: 2px solid black;
+        border-top: 0;
+        transition: height 1s, visibility 1s;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        >p {
+            transition: filter .1s;
+            filter: opacity(0%);
+        }
+
+        &.expanded {
+            height: 20rem;
+            visibility: visible;
+
+            >p {
+                transition-delay: .7s;
+                filter: opacity(100%);
+            }
+        }
+
+
     }
 }
