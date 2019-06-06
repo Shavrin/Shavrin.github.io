@@ -41,12 +41,12 @@
         img {
             height: 3rem;
             border-bottom: 2px solid black;
-            transition: all 0.3s;
+            transition: all .1s;
 
             &:hover {
-                border-color: red;
-                filter: drop-shadow(1px 1px 1px red);
+                filter: drop-shadow(0 0 5px gray);
             }
         }
     }
+
 }
