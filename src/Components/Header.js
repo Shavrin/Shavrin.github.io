@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/header.scss';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <header>
             <h1>Kacper Olek</h1>
             <p className="aboutMe">Web Developer</p>
-            <div className="line"></div>
+            <div className={"line" + (props.animateLine ? " animate" : "")}></div>
         </header>);
 };
 

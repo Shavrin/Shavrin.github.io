@@ -10,8 +10,13 @@ header {
 
     .line {
         height: 2px;
-        width: 80%;
+        width: 0%;
         background-color: black;
         margin-bottom: 1rem;
+        transition: width 1s;
+
+        &.animate {
+            width: 80%;
+        }
     }
 }
