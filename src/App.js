@@ -7,21 +7,21 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { 'animateLine': false };
+        this.state = { 'animationStart': false };
     };
 
     componentDidMount() {
         setTimeout(() => {
-            this.setState({ 'animateLine': true });
+            this.setState({ 'animationStart': true });
         }, 250);
     };
 
     render() {
         return (
             <div>
-                <Header animateLine={this.state.animateLine} />
+                <Header animate={this.state.animationStart} />
                 <Projects />
-                <Footer />
+                <Footer animate={this.state.animationStart} />
             </div>);
     };
 };

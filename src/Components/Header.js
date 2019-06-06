@@ -6,7 +6,7 @@ const Header = (props) => {
         <header>
             <h1>Kacper Olek</h1>
             <p className="aboutMe">Web Developer</p>
-            <div className={"line" + (props.animateLine ? " animate" : "")}></div>
+            <div className={"line" + (props.animate ? " animate" : "")}></div>
         </header>);
 };
 
