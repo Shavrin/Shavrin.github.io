@@ -16,7 +16,7 @@ class Header extends React.Component {
             <header>
                 <h1>Kacper Olek</h1>
                 <p>Web Developer</p>
-                <p className="aboutMe" onClick={this.toggleAbout.bind(this)}>About me</p>
+                <p className="aboutMe" onClick={this.toggleAbout.bind(this)}>About me {this.state.aboutExpanded ? <>&uarr;</> : <>&darr;</>}</p>
                 <div className={"line" + (this.props.animate ? " animate" : "")}></div>
                 <div className={'aboutMeSection' + (this.state.aboutExpanded ? ' expanded' : "")}>
                     <p>Hi, I'm Kacper!</p>
