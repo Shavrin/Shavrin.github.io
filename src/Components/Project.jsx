@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/project.scss';
 
 const Project = (props) => {
   const {
@@ -10,7 +9,7 @@ const Project = (props) => {
     <div className="project">
       <img src={imageURL} alt="Project" />
       <h2 className="title">{title}</h2>
-      <div className="description">{description}</div>
+      <p className="description">{description}</p>
       <div className="links">
         <a href={githubLink}>
           <img src="./GitHub_Logo.png" alt="Github" />

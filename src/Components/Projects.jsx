@@ -1,6 +1,5 @@
 import React from 'react';
 import Project from './Project';
-import '../styles/projects.scss';
 
 const Projects = () => (
   <div className="projects">

@@ -1,11 +1,11 @@
 header {
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    h1 {
-        margin: 1rem 0 0 0;
+    p {
+        margin-top: 0;
     }
 
     .aboutMe {
@@ -25,6 +25,9 @@ header {
 
         &.animate {
             width: 85%;
+            @media screen and (max-width: 768px){
+                width: 95%;
+            }
         }
     }
 
@@ -32,6 +35,9 @@ header {
         visibility: hidden;
         height: 0;
         width: calc(85% - 4px);
+        @media screen and (max-width: 768px){
+            width: calc(95% - 4px);
+        }
         border: 2px solid black;
         border-top: 0;
         transition: height 1s, visibility 1s;
@@ -40,13 +46,20 @@ header {
         flex-direction: column;
         justify-content: center;
 
+        p {
+            margin: 10px 0 10px 0;
+        }
+
         >p {
             transition: filter .1s;
             filter: opacity(0%);
         }
 
         &.expanded {
-            height: 20rem;
+            height: 300px;
+            @media screen and (max-width: 768px){
+                height: 200px;
+            }
             visibility: visible;
 
             >p {

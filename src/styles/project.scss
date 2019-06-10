@@ -1,18 +1,17 @@
 .project {
-    width: 35rem;
+    width: 500px;
+    @media screen and (max-width: 768px){
+        width: 95%;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 1rem 2rem 1rem;
+    margin: 0 10px 20px 10px;
     border: 1px solid gray;
     overflow: hidden;
 
-    h2 {
-        margin: 1rem 0 1rem 0;
-    }
-
     .description {
-        margin: 1rem;
+        margin-top: 0;
     }
 
     >img {
@@ -20,7 +19,7 @@
         background-size: cover;
         width: 100%;
         object-fit: cover;
-        height: 10rem;
+        height: 125px;
         filter: grayscale(100%);
         transition: all 0.3s;
         border-bottom: 1px solid gray;
@@ -36,12 +35,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding-bottom: 2rem;
+        margin-bottom: 20px;
 
         img {
-            height: 3rem;
+            height: 40px;
             border-bottom: 2px solid black;
-            transition: all .1s;
+            transition: filter .1s;
 
             &:hover {
                 filter: drop-shadow(0 0 5px gray);
