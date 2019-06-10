@@ -21,7 +21,6 @@ class Header extends React.Component {
         <p>Web Developer</p>
         <button type="button" className="aboutMe" onClick={this.toggleAbout.bind(this)}>
                     About me
-          {' '}
           {aboutExpanded ? <>&uarr;</> : <>&darr;</>}
         </button>
         <div className={`line${animate ? ' animate' : ''}`} />

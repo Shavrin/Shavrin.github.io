@@ -8,12 +8,21 @@ header {
         margin-top: 0;
     }
 
-    .aboutMe {
-        border-bottom: 2px solid gray;
-
-        &:hover {
+    button.aboutMe {
+        margin: 15px;
+        font-size: 1.6rem;
+        @media screen and (max-width: 768px){
+            font-size: 2rem;
+        }
+        border: 2px solid black;
+        color: black;
+        background-color: white;
+        &:focus,&:hover{
             filter: drop-shadow(0 0 5px gray);
             cursor: pointer;
+        }
+        &:active {
+            background-color: lightgray;
         }
     }
 
