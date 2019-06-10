@@ -1,0 +1,24 @@
+footer {
+    bottom: -50px;
+    height: 50px;
+    justify-content: center;
+}
+
+header {
+    button.aboutMe {
+        font-size: 2rem;
+    }
+    .line.animate {
+        width: 95%;
+    }
+    .aboutMeSection {
+        width: calc(95% - 4px);
+        &.expanded {
+            height: 200px;
+        }
+    }
+}
+
+.project {
+    width: 95%;
+}
