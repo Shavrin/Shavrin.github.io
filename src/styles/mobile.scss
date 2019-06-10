@@ -13,8 +13,13 @@ header {
     }
     .aboutMeSection {
         width: calc(95% - 4px);
+        transition: all 0s;
+
         &.expanded {
             height: 200px;
+            >p {
+                transition-delay: 0s;
+            }
         }
     }
 }
