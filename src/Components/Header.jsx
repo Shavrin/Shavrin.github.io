@@ -17,7 +17,7 @@ class Header extends React.Component {
     const { animate } = this.props;
     return (
       <header>
-        <h1>Kacper Olek</h1>
+        <h1>Kacper Olek&apos;s Portfolio</h1>
         <p>Web Developer</p>
         <button type="button" className="aboutMe" onClick={this.toggleAbout.bind(this)}>
                     About me
